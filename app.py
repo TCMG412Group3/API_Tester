@@ -1,8 +1,8 @@
 import requests
 import sys
 
-urlbase = input("Enter the hostname(including https), if you mess it up i'm not doing anything helpful:")
-#urlbase = 'https://test-enviroment.yatagansabre.repl.co'
+#urlbase = input("Enter the hostname(including https), if you mess it up i'm not doing anything helpful:")
+urlbase = 'http://localhost:4000/'
 
 def tester(endpoint, exresult, exstatus):
   #combines everything to function
@@ -66,3 +66,4 @@ print(tester("/slack-alert/suffering", True , 200))
 print(tester("/slack-alert/.>'\"/#$%^&*()_+", None , 404))
 
 sys.exit(0)
+
