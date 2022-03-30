@@ -33,22 +33,31 @@ print(tester("/md5/-23123", "98454b6dcebcf2a62b34f8cca54ef743", 200))
 print("Starting Factorial Testing")
 print(tester("/factorial/14", 87178291200, 200))
 print(tester("/factorial/5", 120, 200))
+print(tester("/factorial/03", 6, 200))
+print(tester("/factorial/0.45", None, 404))
 print(tester("/factorial/-45", None, 404))
 print(tester("/factorial/hello", None, 404))
+
 
 #Fibonacci
 print("Starting Fibonacci Testing")
 print(tester("/fibonacci/5", [0,1,1,2,3,5], 200))
 print(tester("/fibonacci/14", [0,1,1,2,3,5,8,13], 200))
+print(tester("/fibonacci/89", [0,1,1,2,3,5,8,13,21,34,55,89], 200))
+print(tester("/fibonacci/test_3", None , 404))
 print(tester("/fibonacci/-1", None , 404))
 print(tester("/fibonacci/hello", None, 404))
+print(tester("/fibonacci/0.03", None, 404))
 
 #Prime
 print("Starting Prime Testing")
 print(tester("/is-prime/7", True, 200))
 print(tester("/is-prime/21", False, 200))
+print(tester("/is-prime/030", False, 200))
+print(tester("/is-prime/0.5", None, 404))
 print(tester("/is-prime/0", None, 404))
 print(tester("/is-prime/-1", None, 404))
+print(tester("/is-prime/random", None, 404))
 
 #Slack
 print("Starting Slack Testing")
