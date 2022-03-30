@@ -54,9 +54,13 @@ print("Starting Prime Testing")
 print(tester("/is-prime/7", True, 200))
 print(tester("/is-prime/21", False, 200))
 print(tester("/is-prime/030", False, 200))
+print(tester("is-prime/31", True 200))
+print(tester("is-prime/59", True 200)) 
+print(tester("is-prime/62", False, 200)) 
 print(tester("/is-prime/0.5", None, 404))
 print(tester("/is-prime/0", None, 404))
 print(tester("/is-prime/-1", None, 404))
+print tester("/is-prime/-6" None, 404))
 print(tester("/is-prime/random", None, 404))
 
 #Slack
